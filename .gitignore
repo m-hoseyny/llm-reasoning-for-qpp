@@ -1,0 +1,10 @@
+*.log
+*.txt
+*.csv
+model*/
+*.pyc
+BertPE2022
+*.model
+*.out
+wandb/
+reasoning_by_llm/
