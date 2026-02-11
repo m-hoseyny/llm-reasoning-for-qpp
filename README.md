@@ -15,6 +15,7 @@ PaperRepo/
 ├── model.py              # BERT-based QPP model architecture
 ├── dataset.py            # Dataset loader with reasoning integration
 ├── oneHot_reasoning.py   # LLM-based reasoning extraction pipeline
+├── few_shot_performance.py # Few-shot QPP with LLMs and FAISS retrieval
 ├── config.json           # Training and model configuration
 ├── PadCollate.py         # Custom collation for batch processing
 ├── losses.py             # QPP loss function (MSE)
@@ -103,6 +104,8 @@ pandas>=2.0.0
 scipy>=1.10.0
 pyarrow>=12.0.0
 openai>=1.0.0
+faiss-cpu
+sentence-transformers
 ```
 
 Install dependencies:
@@ -217,6 +220,61 @@ python oneHot_reasoning.py
 - Local LLM server running (Ollama with Qwen 3:8B)
 - Query files in `datasets_/` directory
 - Modify dataset paths in script (lines 143-147)
+
+### Few-Shot QPP with LLMs
+
+Run few-shot query performance prediction using an LLM and FAISS-based similar query retrieval:
+
+```bash
+python few_shot_performance.py --model qwen3:8b --output_dir results/few_shot
+```
+
+**How it works:**
+1. Encodes training queries with a sentence-transformer model
+2. Builds a FAISS index for fast similarity search
+3. For each test query, retrieves the most similar training queries as few-shot examples
+4. Prompts an LLM to predict the performance score based on the examples
+5. Computes Pearson, Kendall, and Spearman correlations against ground truth
+
+**Required arguments:**
+
+| Argument | Description |
+|---|---|
+| `--model`, `-m` | LLM model name (e.g., `phi4:latest`, `qwen3:8b`) |
+| `--output_dir`, `-o` | Output directory for predictions and results |
+
+**Optional arguments:**
+
+| Argument | Default | Description |
+|---|---|---|
+| `--datasets`, `-d` | all | Test datasets to evaluate (`test2019`, `test2020`, `testhard`, `testdev`) |
+| `--dataset_dir` | `dataset` | Directory containing test dataset files |
+| `--train_queries_path` | `datasets/queries.train_filtered.tsv` | Path to training queries TSV |
+| `--train_scores_path` | `dataset/train_query_mrr.tsv` | Path to training scores TSV |
+| `--embeddings_dir` | `embeddings_output` | Directory for FAISS index and embeddings |
+| `--embedding_model` | `all-MiniLM-L6-v2` | Sentence-transformer embedding model |
+| `--num_few_shot`, `-k` | `5` | Number of few-shot examples |
+| `--batch_size` | `1` | Batch size for LLM inference |
+| `--embedding_batch_size` | `256` | Batch size for creating embeddings |
+| `--api_key` | `ollama` | API key for the LLM server |
+| `--base_url` | `http://localhost:11434/v1` | Base URL for the LLM server |
+
+**Examples:**
+
+```bash
+# Evaluate on specific datasets with 10 few-shot examples
+python few_shot_performance.py -m phi4:latest -o results/phi4 -d test2019 test2020 -k 10
+
+# Use a different embedding model and custom API endpoint
+python few_shot_performance.py -m qwen3:8b -o results/qwen \
+    --embedding_model all-mpnet-base-v2 \
+    --base_url http://remote-server:11434/v1
+```
+
+**Requirements:**
+- LLM server running (e.g., Ollama) at the specified `--base_url`
+- Training query files and dataset files in place
+- The FAISS index is built automatically on first run and cached in `--embeddings_dir`
 
 ## Results
 

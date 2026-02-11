@@ -105,7 +105,8 @@ def extract_reasons(df, dataset_name, model_name, task):
                     model= model_name,
                     messages=local_message,
                     temperature=0,
-                    top_p=1
+                    top_p=1,
+                    extra_body={"think": False}
                 )
                 data = response.choices[0].message.content.split('</think>')[-1].strip()
                 thinking = response.choices[0].message.content.split('</think>')[0].strip()
@@ -138,13 +139,13 @@ def extract_reasons(df, dataset_name, model_name, task):
         
         
 if __name__ == '__main__':
-    model_name = 'qwen3:8b'
+    model_name = 'mistral:latest'
     task = 'oneHot-reasoning'
-    for dataset_name in ['train','hard', '2022', '2021', '2020', '2019', 'dev.small']:
+    for dataset_name in ['train', 'hard', '2020', '2019', '2021', '2022' 'dev.small']:
         if dataset_name == 'train':
-            df_path = 'datasets_/queries.train_filtered.tsv'
+            df_path = 'dataset/queries.train_filtered.tsv'
         else:
-            df_path = 'datasets_/queries.train_filtered.tsv'
+            df_path = f'dataset/test{dataset_name}-queries-filterd.tsv'
         df = load_df(df_path)
         extract_reasons(df, dataset_name, model_name, task)
     
