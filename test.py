@@ -74,5 +74,5 @@ if __name__ == '__main__':
         config = json.load(jsonfile)  # Reading the file
         print(config)
         jsonfile.close()
-    for dataset_name in ['dl1920', 'dl2122', 'dev', 'dlhard', 'dl19', 'dl20', 'dl21', 'dl22']:
+    for dataset_name in ['dev', 'dlhard', 'dl19', 'dl20', 'dl21', 'dl22']:
         test(config, dataset_name)
