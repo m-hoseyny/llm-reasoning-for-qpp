@@ -240,7 +240,7 @@ python few_shot_performance.py --model qwen3:8b --output_dir results/few_shot
 
 | Argument | Description |
 |---|---|
-| `--model`, `-m` | LLM model name (e.g., `phi4:latest`, `qwen3:8b`) |
+| `--model`, `-m` | LLM model name (e.g., `gpt-4o-mini`, `qwen3:8b`) |
 | `--output_dir`, `-o` | Output directory for predictions and results |
 
 **Optional arguments:**
