@@ -1,0 +1,101 @@
+source_split	qid	annotation_type	query	Too narrow or specific	Too broad or vague	Lacks necessary context	Ambiguous or poorly defined	Unclear topic or focus	Requires specialized knowledge	Not a general knowledge query	No clear answer available	Not a standard question	Unconventional format or structure
+19	1110199	LLM judgement	what is wifi vs bluetooth	0	0	0	0	0	0	1	0	0	0
+19	1110199	Human annotation	what is wifi vs bluetooth	0	1	0	0	0	0	1	0	0	0
+19	915593	LLM judgement	what types of food can you cook sous vide	0	0	0	0	0	0	1	0	0	0
+19	915593	Human annotation	what types of food can you cook sous vide	0	1	0	0	0	0	1	0	0	0
+19	264014	LLM judgement	how long is life cycle of flea	0	0	0	0	0	0	1	0	0	0
+19	264014	Human annotation	how long is life cycle of flea	0	0	0	1	0	1	0	0	0	0
+19	359349	LLM judgement	how to find the midsegment of a trapezoid	0	0	0	0	0	0	0	0	0	0
+19	359349	Human annotation	how to find the midsegment of a trapezoid	0	0	0	0	0	0	1	0	0	0
+19	104861	LLM judgement	cost of interior concrete flooring	0	0	0	0	0	0	1	0	0	0
+19	104861	Human annotation	cost of interior concrete flooring	0	0	0	0	0	0	1	0	0	0
+19	1114819	LLM judgement	what is durable medical equipment consist of	0	0	0	0	0	0	1	0	0	0
+19	1114819	Human annotation	what is durable medical equipment consist of	0	0	0	0	0	0	1	0	0	0
+19	1124210	LLM judgement	tracheids are part of _____.	0	0	0	0	0	0	1	0	0	0
+19	1124210	Human annotation	tracheids are part of _____.	0	0	0	0	0	0	0	0	1	0
+19	87452	LLM judgement	causes of military suicide	0	0	0	0	0	0	1	0	1	0
+19	87452	Human annotation	causes of military suicide	0	0	0	0	0	0	1	0	1	0
+19	1114646	LLM judgement	what is famvir prescribed for	0	0	0	0	0	0	1	0	0	0
+19	1114646	Human annotation	what is famvir prescribed for	0	0	0	0	0	0	1	0	0	0
+19	182539	LLM judgement	example of monotonic function	0	0	0	0	0	0	1	0	1	0
+19	182539	Human annotation	example of monotonic function	0	0	0	0	0	0	1	0	0	0
+19	1129237	LLM judgement	hydrogen is a liquid below what temperature	0	0	0	0	0	0	0	0	0	0
+19	1129237	Human annotation	hydrogen is a liquid below what temperature	0	0	0	0	0	0	1	0	1	0
+19	146187	LLM judgement	difference between a mcdouble and a double cheeseburger	0	0	0	0	0	0	1	0	0	0
+19	146187	Human annotation	difference between a mcdouble and a double cheeseburger	0	0	0	0	0	0	1	0	0	0
+20	1106979	LLM judgement	define pareto chart in statistics	0	0	0	0	0	0	1	0	0	0
+20	1106979	Human annotation	define pareto chart in statistics	0	0	0	0	0	1	1	0	0	0
+20	1116380	LLM judgement	what is a nonconformity? earth science	0	0	0	0	0	0	1	0	1	0
+20	1116380	Human annotation	what is a nonconformity? earth science	0	0	0	0	0	1	1	0	0	0
+20	1122767	LLM judgement	what amino produces carnitine	0	0	0	0	0	0	1	0	1	0
+20	1122767	Human annotation	what amino produces carnitine	0	0	0	0	0	0	1	0	0	0
+20	174463	LLM judgement	dog day afternoon meaning	0	0	0	0	0	0	1	0	1	0
+20	174463	Human annotation	dog day afternoon meaning	0	0	0	0	1	0	1	0	0	0
+20	23849	LLM judgement	are naturalization records public information	0	0	0	0	0	0	0	0	0	0
+20	23849	Human annotation	are naturalization records public information	0	0	0	0	0	0	1	0	0	0
+20	324585	LLM judgement	how much money do motivational speakers make	0	0	0	0	0	0	1	1	1	0
+20	324585	Human annotation	how much money do motivational speakers make	0	0	0	0	0	0	1	1	0	0
+20	330975	LLM judgement	how much would it cost to install my own wind turbine	0	0	0	0	0	0	1	0	1	0
+20	330975	Human annotation	how much would it cost to install my own wind turbine	0	0	0	0	0	1	1	0	0	0
+20	332593	LLM judgement	how often to button quail lay eggs	0	0	0	0	0	0	1	0	1	0
+20	332593	Human annotation	how often to button quail lay eggs	0	0	0	0	0	1	1	0	0	0
+20	673670	LLM judgement	what is a alm	0	0	0	0	0	0	1	0	1	0
+20	673670	Human annotation	what is a alm	0	0	0	0	0	1	1	0	0	0
+20	701453	LLM judgement	what is a statutory deed	0	0	0	0	0	0	1	0	1	0
+20	701453	Human annotation	what is a statutory deed	0	0	0	0	0	0	1	0	0	0
+20	940547	LLM judgement	when did rock n roll begin?	0	0	0	0	0	0	1	0	0	0
+20	940547	Human annotation	when did rock n roll begin?	0	0	0	0	0	0	1	0	0	0
+20	997622	LLM judgement	where is the show shameless filmed	0	0	0	0	0	0	1	0	0	0
+20	997622	Human annotation	where is the show shameless filmed	0	0	0	0	0	0	1	0	0	0
+dev.small	31432	LLM judgement	average boxer puppy price	0	0	0	0	0	0	1	0	0	0
+dev.small	31432	Human annotation	average boxer puppy price	0	0	1	0	0	1	1	0	0	0
+dev.small	1083443	LLM judgement	what does md mean in an address	0	0	0	0	0	0	1	0	0	0
+dev.small	1083443	Human annotation	what does md mean in an address	0	0	0	0	0	0	1	0	0	0
+dev.small	1086860	LLM judgement	what are the road c	1	1	0	1	1	0	1	0	1	0
+dev.small	1086860	Human annotation	what are the road c	0	0	0	1	1	0	1	1	1	0
+dev.small	845888	LLM judgement	what is the science of mapmaking called	0	0	0	0	0	0	1	0	0	0
+dev.small	845888	Human annotation	what is the science of mapmaking called	0	0	0	0	0	0	1	0	0	0
+dev.small	869035	LLM judgement	what kind of leg pain comes from sciatica	0	0	0	0	0	0	1	0	0	0
+dev.small	869035	Human annotation	what kind of leg pain comes from sciatica	0	0	0	0	0	0	1	0	0	0
+dev.small	98847	LLM judgement	convert oz to gallons	0	0	0	0	0	0	1	0	1	0
+dev.small	98847	Human annotation	convert oz to gallons	0	0	0	0	0	0	1	0	1	0
+dev.small	647872	LLM judgement	what does shortcut mean	0	0	0	0	0	0	1	0	1	0
+dev.small	647872	Human annotation	what does shortcut mean	0	0	0	1	0	0	0	0	0	0
+dev.small	129228	LLM judgement	define workflow	0	0	0	1	0	0	1	0	1	0
+dev.small	129228	Human annotation	define workflow	0	0	0	1	1	0	0	0	0	0
+dev.small	929372	LLM judgement	what zone is heathrow airport in	0	0	0	0	0	0	1	0	0	0
+dev.small	929372	Human annotation	what zone is heathrow airport in	0	0	0	0	0	0	1	0	0	0
+dev.small	995029	LLM judgement	where is the city of tightwad	1	0	0	0	1	0	1	1	1	0
+dev.small	995029	Human annotation	where is the city of tightwad	0	0	0	0	0	0	1	1	0	0
+dev.small	227968	LLM judgement	how does the doctor check your prostate?	0	0	0	0	0	0	0	0	0	0
+dev.small	227968	Human annotation	how does the doctor check your prostate?	0	0	0	0	0	1	0	0	0	0
+dev.small	1021065	LLM judgement	what series are on amazon prime	0	0	0	0	0	0	1	0	0	0
+dev.small	1021065	Human annotation	what series are on amazon prime	0	0	0	0	0	0	1	0	0	0
+dev.small	499126	LLM judgement	skype doesn't work on galaxy s5	0	0	0	0	0	0	1	0	0	0
+dev.small	499126	Human annotation	skype doesn't work on galaxy s5	0	0	0	0	0	0	1	0	1	0
+hard	794429	LLM judgement	what is sculpture shape space	0	0	0	0	0	0	1	0	1	0
+hard	794429	Human annotation	what is sculpture shape space	0	0	0	0	0	1	0	0	0	0
+hard	177604	LLM judgement	eating foods that are considered warm	0	0	0	0	0	0	1	0	0	0
+hard	177604	Human annotation	eating foods that are considered warm	0	0	0	0	0	0	0	0	1	1
+hard	588587	LLM judgement	what causes heavy metal toxins in your body	0	0	0	0	0	0	1	0	0	0
+hard	588587	Human annotation	what causes heavy metal toxins in your body	0	0	0	0	0	1	1	0	0	0
+hard	527433	LLM judgement	types of dysarthria from cerebral palsy	0	0	0	0	0	0	1	0	0	0
+hard	527433	Human annotation	types of dysarthria from cerebral palsy	0	0	0	0	0	1	1	0	0	0
+hard	877809	LLM judgement	what metal are hip replacements made of	0	0	0	0	0	0	1	0	0	0
+hard	877809	Human annotation	what metal are hip replacements made of	0	0	0	0	0	1	1	0	0	0
+hard	554515	LLM judgement	what are achieved and ascribed statuses?	0	0	0	0	0	0	1	0	1	0
+hard	554515	Human annotation	what are achieved and ascribed statuses?	0	0	0	0	0	0	1	0	0	0
+hard	730539	LLM judgement	what is chronometer who invented it	0	0	0	0	0	0	1	0	0	0
+hard	730539	Human annotation	what is chronometer who invented it	0	0	0	0	0	0	1	0	0	0
+hard	144862	LLM judgement	did prohibition increased crime	0	0	0	0	0	0	0	0	0	0
+hard	144862	Human annotation	did prohibition increased crime	0	0	0	0	0	0	0	1	0	0
+hard	1106007	LLM judgement	define visceral?	0	0	0	1	0	0	1	0	1	0
+hard	1106007	Human annotation	define visceral?	0	0	0	0	0	0	1	0	0	0
+hard	1117817	LLM judgement	what does unauthorized act in writing mean	0	0	0	0	0	0	1	0	1	0
+hard	1117817	Human annotation	what does unauthorized act in writing mean	0	0	1	0	0	0	0	1	1	0
+hard	1108100	LLM judgement	what type of movement do bacteria exhibit?	0	0	0	0	0	0	1	0	0	0
+hard	1108100	Human annotation	what type of movement do bacteria exhibit?	0	1	0	0	0	1	1	0	0	0
+hard	1136769	LLM judgement	why does lacquered brass tarnish	0	0	0	0	0	0	1	0	0	0
+hard	1136769	Human annotation	why does lacquered brass tarnish	1	0	0	0	0	1	1	0	0	0
+hard	19335	LLM judgement	anthropological definition of environment	0	0	0	0	0	0	1	0	0	0
+hard	19335	Human annotation	anthropological definition of environment	0	0	0	0	0	1	1	0	0	0
